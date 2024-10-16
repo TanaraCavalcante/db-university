@@ -26,7 +26,9 @@ WHERE `hour` >= "14:00"
 AND `date`>= "2020/06/20";
 
 --TODO 6- Selezionare tutti i corsi di laurea magistrale (38)
-
+SELECT * 
+FROM `degrees` 
+WHERE `level` = "magistrale";
 
 --TODO 7- Da quanti dipartamenti è composta l'universita? (12)
 SELECT DISTINCT `department_id` 
